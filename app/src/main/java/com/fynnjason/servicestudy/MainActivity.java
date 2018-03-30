@@ -40,8 +40,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         intent = new Intent(this, SimpleService.class);
+    }
+
+    public void onIntentServiceClick(View view) {
+
+
+        Intent intent = new Intent(this, MyIntentService.class);
+        startService(intent);
     }
 
     public void onBindClick(View view) {
@@ -51,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     public void onUnBindClick(View view) {
         unbindService(connection);
     }
+
     public void onStartClick(View view) {
         startService(intent);
     }

@@ -43,6 +43,13 @@
             android:layout_height="wrap_content"
             android:onClick="onUnBindClick"
             android:text="解绑服务" />
+
+        <Button
+            android:onClick="onIntentServiceClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IntentService"
+            android:textAllCaps="false"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
